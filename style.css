@@ -1,1 +1,42 @@
-font-family: 'Righteous', cursive;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.principal {
+    width: 100%;
+}
+
+.header {
+    background-color: #CF2B2B;
+    color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.conteudo {
+    margin-top: 90px;
+}
