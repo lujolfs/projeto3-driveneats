@@ -22,170 +22,227 @@
         </div> <!--Final Header-->
 
         <div class="conteudo"> <!--Início Conteúdo-->
-            <div class="roles">
+            <div class="roles dps">
                 <h2>Primeiro, escolha seu DPS.</h2>
                    <div class="opcoes">
-                        <div class="jobs">
+                        <div class="jobs monk dps" onclick="selecaoDps('monk')">
                             <img src="imagens\jobs\monk.png">
                             <p1>Monk</p1>
                             <div class="desc">
                                 <p2>Melee DPS. Usa os punhos e chakra!</p2>
                             </div>
-                            <p3>R$ 12,90</p3>
+                            <div class="preco-selec">
+                                <p3>R$ 12,90</p3>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            </div>
                         </div>
-                        <div class="jobs">
+                        <div class="jobs dragoon dps" onclick="selecaoDps('dragoon')">
                             <img src="imagens\jobs\dragoon.png">
                             <p1>Dragoon</p1>
                             <div class="desc">
-                            <p2>Melee DPS. Pela honra de Ishgard!</p2>
+                                <p2>Melee DPS. Pela honra de Ishgard!</p2>
                             </div>
-                            <p3>R$ 20,00</p3>
+                            <div class="preco-selec">
+                                <p3>R$ 20,00</p3>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            </div>
                         </div>
-                        <div class="jobs">
-                            <img src="imagens\jobs\ninja.png">
+                        <div class="jobs ninja dps" onclick="selecaoDps('ninja')"> 
+                        <img src="imagens\jobs\ninja.png">
                             <p1>Ninja</p1>
                             <div class="desc">
                                 <p2>Melee DPS. Lute nas sombras!</p2>
                             </div>
-                            <p3>R$ 18,50</p3>
+                            <div class="preco-selec">
+                                <p3>R$ 18,50</p3>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            </div>
                         </div>
-                        <div class="jobs">
-                            <img src="imagens\jobs\samurai.png">
+                        <div class="jobs samurai dps" onclick="selecaoDps('samurai')">
+                        <img src="imagens\jobs\samurai.png">
                             <p1>Samurai</p1>
                             <div class="desc">
                                 <p2>Melee DPS. Retalhe seus inimigos!</p2>
                             </div>
-                            <p3>R$ 25,00</p3>
+                            <div class="preco-selec">
+                                <p3>R$ 25,00</p3>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            </div>
                         </div>
-                        <div class="jobs">
+                        <div class="jobs reaper dps" onclick="selecaoDps('reaper')">
                             <img src="imagens\jobs\reaper.png">
                             <p1>Reaper</p1>
                             <div class="desc">
                                 <p2>Melee DPS. Faça um acordo com o Void!</p2>
                             </div>
-                            <p3>R$ 20,00</p3>
+                            <div class="preco-selec">
+                                <p3>R$ 20,00</p3>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            </div>
                         </div>
-                        <div class="jobs">
+                        <div class="jobs bard dps" onclick="selecaoDps('bard')">
                             <img src="imagens\jobs\bard.png">
                             <p1>Bard</p1>
                             <div class="desc">
                                 <p2>Ranged DPS. Inspire seus aliados!</p2>
                             </div>
-                            <p3>R$ 7,50</p3>
+                            <div class="preco-selec">
+                                <p3>R$ 7,50</p3>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            </div>
                         </div>
-                        <div class="jobs">
+                        <div class="jobs machinist dps" onclick="selecaoDps('machinist')">
                             <img src="imagens\jobs\machinist.png">
                             <p1>Machinist</p1>
                             <div class="desc">
                                 <p2>Ranged DPS. Use o poder da pólvora!</p2>
                             </div>
-                            <p3>R$ 7,50</p3>
+                            <div class="preco-selec">
+                                <p3>R$ 7,50</p3>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            </div>
                         </div>
-                        <div class="jobs">
+                        <div class="jobs dancer dps" onclick="selecaoDps('dancer')">
                             <img src="imagens\jobs\dancer.png">
                             <p1>Dancer</p1>
                             <div class="desc">
                                 <p2>Ranged DPS. Mantenha o ritmo!</p2>
                             </div>
-                            <p3>R$ 25,00</p3>
+                            <div class="preco-selec">
+                                <p3>R$ 25,00</p3>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            </div>
                         </div>
-                        <div class="jobs">
+                        <div class="jobs black-mage dps" onclick="selecaoDps('black-mage')">
                             <img src="imagens\jobs\blackmage.png">
                             <p1>Black Mage</p1>
                             <div class="desc">
                                 <p2>Caster. Destruição arcana!</p2>
                             </div>
-                            <p3>R$ 20,00</p3>
+                            <div class="preco-selec">
+                                <p3>R$ 20,00</p3>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            </div>
                         </div>
-                        <div class="jobs">
+                        <div class="jobs summoner dps" onclick="selecaoDps('summoner')">
                             <img src="imagens\jobs\summoner.png">
                             <p1>Summoner</p1>
                             <div class="desc">
                                 <p2>Caster. Invoque primals!</p2>
                             </div>
-                            <p3>R$ 25,00</p3>
+                            <div class="preco-selec">
+                                <p3>R$ 25,00</p3>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            </div>
                         </div>
-                        <div class="jobs">
+                        <div class="jobs red-mage dps" onclick="selecaoDps('red-mage')">
                             <img src="imagens\jobs\redmage.png">
                             <p1>Red Mage</p1>
                             <div class="desc">
                                 <p2>Caster. Magia em alta velocidade!</p2>
                             </div>
-                            <p3>R$ 25,00</p3>
+                            <div class="preco-selec">
+                                <p3>R$ 25,00</p3>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            </div>
                         </div>
                    </div>
             </div>
-            <div class="roles">
+            <div class="roles tank">
                 <h2>Agora, escolha seu Tank!</h2>
                 <div class="opcoes">
-                    <div class="jobs">
+                    <div class="jobs paladin tank" onclick="selecaoTank('paladin')">
                         <img src="imagens\jobs\paladin.png">
                         <p1>Paladin</p1>
                         <div class="desc">
                             <p2>Tank. Pela honra de Ul'dah!</p2>
                         </div>
-                        <p3>R$ 25,00</p3>
+                        <div class="preco-selec">
+                            <p3>R$ 25,00</p3>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
                     </div>
-                    <div class="jobs">
+                    <div class="jobs warrior tank" onclick="selecaoTank('warrior')">
                         <img src="imagens\jobs\warrior.png">
                         <p1>Warrior</p1>
                         <div class="desc">
                             <p2>Tank. Encontre sua fera interior!</p2>
                         </div>
-                        <p3>R$ 20,00</p3>
+                        <div class="preco-selec">
+                            <p3>R$ 20,00</p3>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
                     </div>
-                    <div class="jobs">
+                    <div class="jobs dark-knight tank" onclick="selecaoTank('dark-knight')">
                         <img src="imagens\jobs\darkknight.png">
                         <p1>Dark Knight</p1>
                         <div class="desc">
                             <p2>Tank. Proteja os mais fracos!</p2>
                         </div>
-                        <p3>R$ 18,50</p3>
+                        <div class="preco-selec">
+                            <p3>R$ 18,50</p3>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
                     </div>
-                    <div class="jobs">
+                    <div class="jobs gunbreaker tank" onclick="selecaoTank('gunbreaker')">
                         <img src="imagens\jobs\gunbreaker.png">
                         <p1>Gunbreaker</p1>
                         <div class="desc">
                             <p2>Tank. As lâminas de Gunnhildr!</p2>
                         </div>
-                        <p3>R$ 18,50</p3>
+                        <div class="preco-selec">
+                            <p3>R$ 18,50</p3>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="roles">
+            <div class="roles healer">
                 <h2>Para finalizar, escolha seu Healer.</h2>
                 <div class="opcoes">
-                    <div class="jobs">
+                    <div class="jobs white-mage" onclick="selecaoHealer('white-mage')">
                         <img src="imagens\jobs\whitemage.png">
                         <p1>White Mage</p1>
                         <div class="desc">
                             <p2>Healer. Os escolhidos dos elementais!</p2>
                         </div>
-                        <p3>R$ 12,90</p3>
+                        <div class="preco-selec">
+                            <p3>R$ 12,90</p3>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
                     </div>
-                    <div class="jobs">
+                    <div class="jobs scholar" onclick="selecaoHealer('scholar')">
                         <img src="imagens\jobs\scholar.png">
                         <p1>Scholar</p1>
                         <div class="desc">
                             <p2>Healer. Os acadêmicos de Nym!</p2>
                         </div>
-                        <p3>R$ 12,90</p3>
+                        <div class="preco-selec">
+                            <p3>R$ 12,90</p3>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
                     </div>
-                    <div class="jobs">
+                    <div class="jobs astrologian" onclick="selecaoHealer('astrologian')">
                         <img src="imagens\jobs\astrologian.png">
                         <p1>Astrologian</p1>
                         <div class="desc">
                             <p2>Healer. Desvende o destino!</p2>
                         </div>
-                        <p3>R$ 20,00</p3>
+                        <div class="preco-selec">
+                            <p3>R$ 20,00</p3>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
                     </div>
-                    <div class="jobs">
+                    <div class="jobs sage" onclick="selecaoHealer('sage')">
                         <img src="imagens\jobs\scholar.png">
                         <p1>Sage</p1>
                         <div class="desc">
                             <p2>Healer. Ataque e cure com nouliths!</p2>
                         </div>
-                        <p3>R$ 18,50</p3>
+                        <div class="preco-selec">
+                            <p3>R$ 18,50</p3>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -197,5 +254,10 @@
             </div>
         </div> <!--Final Footer-->
     </div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
