@@ -179,3 +179,7 @@ ion-icon {
 .escondido {
     display: none;
 }
+
+a:active, a:hover, a:visited, a:link {
+   text-decoration: none;
+}

@@ -62,3 +62,9 @@ function finalizaCompra() {
     }
 
 }
+
+function abrirLink() {
+    const msgZap = encodeURIComponent("Olá, gostaria de fazer o pedido:\n- Prato: Frango Yin Yang\n- Bebida: Coquinha Gelada\n- Sobremesa: Pudim\nTotal: R$ 27.70");
+    const linkZap = "https://wa.me/5521991504742?text="+msgZap;
+    window.open(linkZap);
+}
