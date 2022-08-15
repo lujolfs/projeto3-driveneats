@@ -35,6 +35,11 @@ h3 {
     font-weight: 200;
 }
 
+h4 {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
 p1 {
     font-weight: bold;
     font-size: 16px;
@@ -88,6 +93,8 @@ p2 {
     height: 230px;
     padding: 14px;
     margin-right: 16px;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -100,6 +107,24 @@ p2 {
 
 .footer {
     position: sticky;
-    background-color: green;
+    background-color: #FFFFFF;
     bottom: 0;
+    height: 90px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao {
+    background-color: #CBCBCB;
+    width: 365px;
+    height: 65px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 75px;
+    text-align: center;
 }
