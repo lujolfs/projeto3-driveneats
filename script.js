@@ -1,12 +1,24 @@
+let dps;
+
 function selecaoDps(jobEscolhido) {
     const opcaoSelecionada = document.querySelector('.dps .selecionado-dps');
+
     if (opcaoSelecionada !== null) {
         opcaoSelecionada.classList.remove('selecionado-dps');
     }
-const seletor = '.'+jobEscolhido;
-const botao = document.querySelector(seletor);
-botao.classList.add('selecionado-dps');
+
+    const seletor = '.'+jobEscolhido;
+    const botao = document.querySelector(seletor);
+    botao.classList.add('selecionado-dps');
+    console.log(botao);
+    dps = !!botao;
+
+    finalizaCompra()
+
 }
+
+
+let tank;
 
 function selecaoTank(jobEscolhido) {
     const opcaoSelecionada = document.querySelector('.tank .selecionado-tank');
@@ -16,7 +28,13 @@ function selecaoTank(jobEscolhido) {
 const seletor = '.'+jobEscolhido;
 const botao = document.querySelector(seletor);
 botao.classList.add('selecionado-tank');
+
+tank = !!botao;
+
+finalizaCompra()
 }
+
+let healer;
 
 function selecaoHealer(jobEscolhido) {
     const opcaoSelecionada = document.querySelector('.healer .selecionado-healer');
@@ -26,4 +44,21 @@ function selecaoHealer(jobEscolhido) {
 const seletor = '.'+jobEscolhido;
 const botao = document.querySelector(seletor);
 botao.classList.add('selecionado-healer');
+
+healer = !!botao;
+
+finalizaCompra()
+
+}
+
+function finalizaCompra() {
+    console.log(dps, healer, tank);
+    if (dps && tank && healer) {
+        const compraLigada = document.querySelector('.botao-ligado');
+        compraLigada.classList.remove('escondido');
+        const compraDesligada = document.querySelector('.botao-desligado');
+        compraDesligada.classList.add('escondido');
+
+    }
+
 }
